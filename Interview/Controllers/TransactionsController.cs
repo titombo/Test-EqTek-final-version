@@ -106,7 +106,8 @@ namespace Interview.Controllers
         }
 
         // PUT api/<controller>/5
-        public IHttpActionResult Put(int id, [FromBody] TransactionModel transactionModel)
+        [HttpPut]
+        public IHttpActionResult Put([FromBody] TransactionModel transactionModel)
         {
             try
             {
@@ -115,7 +116,8 @@ namespace Interview.Controllers
                 if (transaction == null)
                     return NotFound();
 
-                TransactionsRepository.Transactions.Add(transactionModel);
+                TransactionsRepository.Transactions[TransactionsRepository.Transactions.FindIndex(ind => ind.Id.Equals(transactionModel.Id))] = transactionModel;
+
                 return Json(transactionModel);
             }
             catch (Exception ex)
