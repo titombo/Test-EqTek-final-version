@@ -1,5 +1,8 @@
 # Technical Test #
 
+## Swagger ##
+It can be tested with swagger, by just adding /swagger at the end of the main url you will be able to do it 
+
 ## Welcome to the Equiniti Credit Services Tech Test ##
 This technical test is for candidates wishing to apply for Software Engineering roles with Equiniti Credit Services. It is designed as a starting point for conversation, we do not expect a full solution to be delivered at the end of it (45-75mins). What we do want is for you to have some fun showing us what you can do and how you do it and hopefully spark some conversation about why you made some of your decisions. If you feel there is insufficient time, please just tell us what you would do if you had more time.
 
